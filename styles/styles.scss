@@ -527,8 +527,9 @@ section {
                     padding: 0 !important;
                 }
                 .icon {
-                    display: grid;
-                    grid-template-columns: 40px 1fr;
+                    display: flex;
+                    // grid-template-columns: 40px 1fr;
+                    flex-wrap: wrap;
                     i {
                         display: flex;
                         align-items: center;
