@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #ffffff;
-  --color-secondary: rgb(255, 4, 0);
+  --color-secondary: rgb(255, 0, 0);
   --color-white: #000000;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -237,6 +237,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
+  justify-content: center;
   /* padding: 4rem; */
   /* grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem; */
@@ -247,6 +248,7 @@ section {
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  size: 5rem;
 
 }
 
@@ -592,14 +594,14 @@ ce .internship-item .inte-text .small-text::before {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .certificate-card {
   /* background-color: var(--color-white); */
   border-radius: 5px;
   overflow: hidden;
-  max-width: 250px;
+  max-width: 18.1rem;
   /* max-height: 500px; */
   border: 1px solid var(--color-grey-5);
   transition: all 0.4s ease-in-out;
@@ -615,7 +617,7 @@ ce .internship-item .inte-text .small-text::before {
 
 .certificate-image {
   max-width: 100%;
-  height: auto;
+  height: min-content;
 }
 
 .certificate-details {
@@ -755,7 +757,8 @@ ce .internship-item .inte-text .small-text::before {
 .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: baseline; */
+  
 }
 
 .contact-content-con .left-contact .contact-info .contact-item p {
@@ -765,8 +768,9 @@ ce .internship-item .inte-text .small-text::before {
 }
 
 .contact-content-con .left-contact .contact-info .contact-item .icon {
-  display: grid;
-  grid-template-columns: 40px 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 3rem;
 }
 
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
@@ -796,6 +800,7 @@ ce .internship-item .inte-text .small-text::before {
   border-radius: 50%;
   margin: 0 0.4rem;
   transition: all 0.4s ease-in-out;
+  margin: 0.5rem;
 }
 
 .contact-content-con .left-contact .contact-icon a:hover {
