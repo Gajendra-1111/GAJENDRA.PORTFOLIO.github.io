@@ -6,8 +6,9 @@
 }
 
 :root {
+  --hue-color: 250;
   --color-primary: #ffffff;
-  --color-secondary: rgb(120, 0, 249);
+  --color-secondary: hsl(var(--hue-color), 69%, 61%);
   --color-white: #000000;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -299,7 +300,7 @@ section {
 
 .about-container h4 {
   font-size: 2rem;
-  text-transform: uppercase;
+ 
   text-align: center;
 }
 
@@ -309,13 +310,23 @@ section {
 
 .about-stats .progress-bars {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
 
 .about-stats .progress-bars .progress-bar {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.about-stats .progress-bars .skills__container-img {
+  height: 50px;
+  width: 50px;
+  
+}
+
+.about-stats .progress-bars .skills__container-img:hover {
+  transform: rotate(25deg);
 }
 
 .about-stats .progress-bars .progress-bar .prog-title {
@@ -323,7 +334,7 @@ section {
   font-weight: 500;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con {
+/* .about-stats .progress-bars .progress-bar .progress-con {
   display: flex;
   align-items: center;
 }
@@ -338,8 +349,8 @@ section {
   background-color: var(--color-grey-4);
   margin-left: 1rem;
   position: relative;
-}
-
+} */
+/* 
 .about-stats .progress-bars .progress-bar .progress-con .progress span {
   position: absolute;
   top: 0;
@@ -348,9 +359,9 @@ section {
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
   width: 60%;
-}
+} */
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+/* .about-stats .progress-bars .progress-bar .progress-con .progress .html {
   width: 80%;
 }
 
@@ -372,7 +383,7 @@ section {
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .simulink {
   width: 80%;
-}
+} */
 
 .stat-title {
   text-transform: uppercase;
