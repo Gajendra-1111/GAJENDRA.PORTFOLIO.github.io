@@ -137,8 +137,8 @@
   .theme-btn {
     top: 5%;
     right: 3%;
-    width: 70px;
-    height: 70px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: var(--color-grey-4);
     cursor: pointer;
@@ -185,7 +185,7 @@
   }
   
   .header-content .left-header .image {
-    border-radius: 30px !important;
+    border-radius: 40px !important;
     height: 90%;
     width: 68%;
     margin-left: 4rem;
@@ -204,7 +204,7 @@
   }
   
   .header-content .left-header .image img:hover {
-    filter: grayscale(100%);
+    filter: grayscale(70%);
   }
   
   .header-content .right-header {
@@ -606,8 +606,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    /* padding: 20px; */
+    gap: 2rem;
+    padding: 0;
   }
   
   .certificate-card {
@@ -634,7 +634,7 @@
   }
   
   .certificate-details {
-    padding: 10px;
+    padding: 1rem;
   }
   
   .duration {
@@ -1050,6 +1050,7 @@
   
     .about-container {
       grid-template-columns: repeat(1, 1fr);
+      font-size: medium;
     }
   
     .about-container {
@@ -1059,10 +1060,12 @@
   
     .about-container {
         padding-right: 0;
+        
       }
     
       .about-container p {
         padding-left: 0;
+        
       }
     
       .timeline {
@@ -1071,10 +1074,11 @@
       }
     
       .container {
-        padding: 2rem 2.5rem !important;
+        padding: 2rem 2rem !important;
       }
     
       .about-stats .progress-bars {
+        
         grid-template-columns: repeat(1, 1fr);
       }
     
@@ -1264,6 +1268,8 @@
       }
     
       .about-stats .progress-bars {
+        
+        /* flex-direction: column; */
         grid-template-columns: repeat(1, 1fr);
       }
     
