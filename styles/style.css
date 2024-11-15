@@ -9,7 +9,8 @@
   :root {
     --hue-color: 250;
     --color-primary: #ffffff;
-    --color-secondary: hsl(var(--hue-color), 69%, 61%);
+    /* --color-secondary: hsl(var(--hue-color), 69%, 61%); */
+    --color-secondary: #ff0000;
     --color-white: #000000;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -39,7 +40,8 @@
   
  html,body {
     background-color: var(--color-primary);
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.1rem;
     color: var(--color-white);
     
